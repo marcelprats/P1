@@ -3,6 +3,7 @@
  * see commented examples below
  */
 
+import '@fortawesome/fontawesome-free/css/all.min.css';
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
