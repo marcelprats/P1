@@ -1,1 +1,73 @@
 // Estils de layout
+
+@use 'variables' as v;
+@use 'functions' as f;
+
+body {
+  font-family: v.$font-base;
+  background-color: v.$color-background;
+  color: v.$text-color;
+  line-height: 1.6;
+  font-size: f.rem(16);
+  margin: 0;
+}
+
+.uoc-container {
+  max-width: f.rem(1024);
+  margin: 0 auto;
+  padding: f.rem(20);
+}
+
+.page-header {
+  text-align: center;
+  padding: f.rem(24) 0;
+  background-color: v.$color-secondary;
+
+  &__title {
+    font-size: f.rem(32);
+    color: v.$color-primary;
+    margin-bottom: f.rem(8);
+  }
+
+  &__subtitle {
+    font-size: f.rem(18);
+    font-weight: 400;
+    color: v.$text-color;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: f.rem(12);
+    margin-bottom: f.rem(16);
+  }
+}
+
+.section {
+  padding: f.rem(24);
+  background-color: v.$color-secondary;
+  margin-bottom: f.rem(16);
+  border-radius: f.rem(8);
+
+  &:nth-child(even) {
+    background-color: v.$color-background;
+  }
+
+  &__title {
+    font-size: f.rem(24);
+    color: v.$color-primary;
+    margin-bottom: f.rem(12);
+  }
+
+  &__list {
+    padding-left: f.rem(20);
+  }
+}
+
+.page-footer {
+  background-color: #eee;
+  text-align: center;
+  padding: f.rem(12);
+  font-size: f.rem(14);
+  color: v.$color-primary;
+}
