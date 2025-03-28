@@ -4,6 +4,9 @@
  */
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
@@ -15,3 +18,5 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
   const university = "UOC";
   console.log(`Hello, ${university}!`);
 } )();
+
+AOS.init();
